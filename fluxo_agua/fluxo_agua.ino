@@ -3,7 +3,6 @@ float media = 0; //Variável para tirar a média a cada 1 minuto
 int contaPulso; //Variável para a quantidade de pulsos
 int i = 0; //Variável para contagem
 
-
 void setup()
 {
   Serial.begin(9600); //Inicia a serial com um baud rate de 9600
@@ -12,7 +11,6 @@ void setup()
   attachInterrupt(0, incpulso, RISING); //Configura o pino 2(Interrupção 0) para trabalhar como interrupção
   Serial.println("\n\nInicio\n\n"); //Imprime Inicio na serial
 }
-
 
 void loop ()
 {
@@ -42,7 +40,6 @@ void loop ()
   }
 
 }
-
 
 void incpulso ()
 {

@@ -49,18 +49,18 @@ void loop ()  {
  
  // Neste conjunto de linhas fizemos a média das leituras obtidas a cada 1 minuto
  if (i == 60)  {
- Min++;
- lcd.print(Min);
+  Min++;
+  lcd.print(Min);
  
- if (Min >= 60)  {
- Min = 0;
- }
- media = media / 60; //faz a média
- Serial.print("nMedia por minuto = "); //Imprime a frase Media por minuto =
- Serial.print(media); //Imprime o valor da media
- Serial.println(" L/min - "); //Imprime L/min
- media = 0; //Zera a variável media para uma nova contagem
- i = 0; //Zera a variável i para uma nova contagem
+  if (Min >= 60)  {
+    Min = 0;
+  }
+  media = media / 60; //faz a média
+  Serial.print("nMedia por minuto = "); //Imprime a frase Media por minuto =
+  Serial.print(media); //Imprime o valor da media
+  Serial.println(" L/min - "); //Imprime L/min
+  media = 0; //Zera a variável media para uma nova contagem
+  i = 0; //Zera a variável i para uma nova contagem
  }
 }
  
